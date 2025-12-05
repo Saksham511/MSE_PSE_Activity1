@@ -8,13 +8,17 @@ class FileRead:
         f.close()
 
     def countchar(self):
-        with open("demo_file.txt","r",encoding="utf-8") as f:
-            count = 0
-            for line in f:
-                for ch in line:
-                    if ch=="*":
-                        count += 1
-        return count
+        # with open("demo_file.txt","r",encoding="utf-8") as f:
+        #     count = 0
+        #     for line in f:
+        #         for ch in line:
+        #             if ch=="*":
+        #                 count += 1
+        # return count
+        file = open("demo_file.txt", "r", encoding="utf-8")
+        lines = file.read()
+        file.close()
+        return lines.count("*")
 
 def main():
     obj1 = FileRead()
