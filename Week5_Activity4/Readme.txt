@@ -1,0 +1,2 @@
+This is an example of inheritance how the sub class inherit the properties from the superclass. There is a main super class
+Animal which has a subclass mammal, that has two further subclasses dog and cat.
